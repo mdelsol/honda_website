@@ -1,0 +1,31 @@
+PreludeN:
+  content: "Finished sleeving the block!"
+  created_at: <%= 10.minutes.ago %>
+  user: matthew
+
+DSol42:
+  content: "Just bought her, stock 95 and clean."
+  created_at: <%= 3.years.ago %>
+  user: matthew
+
+CivicEB:
+  content: "Found this insane pull: https://www.youtube.com/watch?v=CwrpMe2x63M"
+  created_at: <%= 2.hours.ago %>
+  user: matthew
+  
+S2K:
+  content: "Can't get enough of DOHC VTEC!!"
+  created_at: <%= 4.hours.ago %>
+  user: michael
+
+most_recent:
+  content: "Writing a short test"
+  created_at: <%= Time.zone.now %>
+  user: matthew
+  
+<% 10.times do |n| %>
+micropost_<%= n %>:
+  content: <%= Faker::Lorem.sentence(5) %>
+  created_at: <%= 42.days.ago %>
+  user: matthew
+<% end %>
