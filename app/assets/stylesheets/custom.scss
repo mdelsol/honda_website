@@ -41,18 +41,18 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3em;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
 }
 
 h2 {
   font-size: 1.2em;
-  letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
   color: $gray-light;
+  line-height: 120%;
 }
 
 p {
@@ -67,13 +67,12 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
-  text-transform: uppercase;
+  color: #FF210D;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: #FF210D;
     text-decoration: none;
   }
 }
@@ -157,6 +156,7 @@ input, textarea, select, .uneditable-input {
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
+  padding-bottom: 20px;
 }
 
 input {
@@ -250,4 +250,9 @@ span.picture {
   input {
     border: 0;
   }
+}
+
+.honda-logo {
+  width: 10%;
+  height: auto;
 }
